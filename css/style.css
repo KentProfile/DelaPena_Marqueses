@@ -75,10 +75,12 @@ header{
     color: #556b2f;
 }
 
-.h1{
+.account .h1{
     text-align: left;
     font-family: "Poppins";
     font-size: 30px;
+    color: white;
+    
 }
 
 
