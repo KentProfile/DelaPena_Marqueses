@@ -53,6 +53,27 @@ header{
 
 }
 
+.open{
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+}
+
+.open h1{
+    text-align: left;
+    padding-top: 20rem;
+    margin-left: 10rem;
+
+}
+
+.open p{
+    text-align: left;
+    padding-top: 1rem;
+    margin-left: 10rem;
+
+}
 
 .navbar{
     display: flex;
@@ -73,14 +94,6 @@ header{
 
 .navbar a.active{
     color: #556b2f;
-}
-
-.h1{
-    text-align: left;
-    font-family: "Poppins";
-    font-size: 30px;
-    color: white;
-    
 }
 
 
