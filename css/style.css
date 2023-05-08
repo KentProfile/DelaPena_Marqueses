@@ -53,6 +53,7 @@ header{
 
 }
 
+
 .navbar{
     display: flex;
 }
@@ -73,6 +74,14 @@ header{
 .navbar a.active{
     color: #556b2f;
 }
+
+.h1{
+    text-align: left;
+    font-family: "Poppins";
+    font-size: 30px;
+}
+
+
 
 .main{
     display: flex;
