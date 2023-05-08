@@ -16,21 +16,28 @@
 
 body{
     min-height: 100vh;
-    background: black;
+    background: #556b2f;
     color: var(--text-color);
 }
 
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
+.profile_pic{
+    padding-left:60rem;
+    padding-top: 10rem;
+}
+.profile_pic img{
+    height: 350px;
+    width: 350px;
+}
+
+.header{
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    padding: 28px 12%;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
     transition: all .50s ease;
 }
 
@@ -61,18 +68,23 @@ header{
     margin: 0px 30px;
 }
 
-.open h1{
+.home .open{
+    max-width: 60rem;
     text-align: left;
-    padding-top: 20rem;
-    margin-left: 10rem;
-
 }
 
-.open p{
-    text-align: left;
-    padding-top: 1rem;
-    margin-left: 10rem;
+.home .open h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
 
+.home .open p{
+    font-size: 3rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
 }
 
 .navbar{
@@ -107,7 +119,7 @@ header{
 .main a{
     margin-right: 25px;
     margin-left: 10px;
-    color: white;
+    color: #556b2f;
     font-size: 1.1rem;
     font-weight: 500;
     transition: all .50s ease;
@@ -126,12 +138,12 @@ header{
 }
 
 .main a:hover{
-    color: white;
+    color: black;
 }
 
 #menu-icon{
     font-size: 35px;
-    color: white;
+    color: #556b2f;
     cursor: pointer;
     z-index: 10001;
     display: none;
