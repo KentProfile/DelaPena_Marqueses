@@ -16,7 +16,11 @@
 
 body{
     min-height: 100vh;
-    background: #556b2f;
+    background: #FAF5E9;
+    background: url('/images/backg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
     color: var(--text-color);
 }
 
@@ -30,7 +34,7 @@ body{
 }
 
 .header{
-    background-color: #fff;
+    background-color: #009B4D;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,44 +51,95 @@ body{
 }
 
 .logo i{
-    color: #556b2f;
+    color: #FAF5E9;
     font-size: 28px;
     margin-right: 3px;
     
 }
 
 .logo span{
-    color: #556b2f;
+    color: #FAF5E9;
     font-size: 2rem;
     font-weight: 600;
 
 }
 
-.open{
-    color: whitesmoke;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 5px 0;
-    margin: 0px 30px;
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
 }
 
-.home .open{
-    max-width: 60rem;
-    text-align: left;
+.home-content {
+    max-width: 700px;
 }
 
-.home .open h1{
-    font-size: 6rem;
-    text-transform: uppercase;
-    color: #fff;
+.home-content h1{
+    font-size:43px;
+    font-weight: 700;
+    color: #FAF5E9;
+    line-height: 1.2;
 }
 
-.home .open p{
-    font-size: 3rem;
-    font-weight: lighter;
-    line-height: 1.8;
-    padding: 1rem 0;
-    color: #fff;
+.home-content h3{
+    font-size:30px;
+    font-weight: 700;
+    color: #FAF5E9;
+}
+
+.home-content p{
+    font-size: 20px;
+    color: #FAF5E9;
+    padding-top: 2rem;
+    font-weight: 300;
+}
+
+.home-icon{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-icon a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #FAF5E9;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #FAF5E9;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-icon a:hover{
+    color: #009B4D;
+}
+
+.home-icon a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #FAF5E9;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.home-icon a:hover::before{
+    width: 100%;
 }
 
 .navbar{
@@ -92,7 +147,7 @@ body{
 }
 
 .navbar a{
-    color: #556b2f;
+    color: #FAF5E9;
     font-size: 1.1rem;
     font-weight: 500;
     padding: 5px 0;
@@ -101,13 +156,8 @@ body{
 }
 
 .navbar a:hover{
-    color: white;
+    color: black;
 }
-
-.navbar a.active{
-    color: #556b2f;
-}
-
 
 
 .main{
@@ -119,7 +169,7 @@ body{
 .main a{
     margin-right: 25px;
     margin-left: 10px;
-    color: #556b2f;
+    color: #FAF5E9;
     font-size: 1.1rem;
     font-weight: 500;
     transition: all .50s ease;
@@ -132,7 +182,7 @@ body{
 }
 
 .user i{
-    color:#556b2f;
+    color:#FAF5E9;
     font-size: 28px;
     margin-right: 7px;
 }
@@ -143,7 +193,7 @@ body{
 
 #menu-icon{
     font-size: 35px;
-    color: #556b2f;
+    color: #FAF5E9;
     cursor: pointer;
     z-index: 10001;
     display: none;
@@ -188,7 +238,7 @@ body{
         transform: translateY(5px);
     }
     .navbar a.active{
-        color: #556b2f;
+        color: #009B4D;
     }
     .navbar .open{
         right: 2%;
