@@ -17,7 +17,7 @@
 body{
     min-height: 100vh;
     background: #FAF5E9;
-    background: url('/images/backg.png') no-repeat;
+    background: url('/images/bg.png') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -143,8 +143,10 @@ body{
 }
 
 
-.about-content{
-
+.about{
+    display: flex;
+    align-items: center;
+    margin: 30px;
 }
 
 .navbar{
