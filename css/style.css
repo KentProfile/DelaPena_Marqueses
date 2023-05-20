@@ -17,7 +17,7 @@
 body{
     min-height: 100vh;
     background: #FAF5E9;
-    background: url('/images/bg.png') no-repeat;
+    background: url('/images/bg3.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -34,7 +34,7 @@ body{
 }
 
 .header{
-    background-color: #009B4D;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,43 +64,57 @@ body{
 
 }
 
-.home{
+/*.home{
     height: 100vh;
-    display: flex;
     align-items: center;
+    text-align: center;
     padding: 0 10%;
+    display: flex;
+    padding: 0 10%;
+    padding-top: 10%;
+    
 }
-
-.home-content {
+*/
+.container .home-content {
     max-width: 700px;
+    max-height: 700px;
+    padding: 50px;
 }
 
-.home-content h1{
+.container .home-content h1{
     font-size:43px;
     font-weight: 700;
     color: #FAF5E9;
     line-height: 1.2;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+
 }
 
-.home-content h3{
+.container .home-content h3{
     font-size:30px;
     font-weight: 700;
     color: #FAF5E9;
 }
 
-.home-content p{
+.container .home-content p{
     font-size: 20px;
     color: #FAF5E9;
     padding-top: 2rem;
     font-weight: 300;
+    align-items: center;
 }
 
 .home-icon{
+    margin: 50px;
     position: absolute;
     bottom: 40px;
     width: 170px;
     display: flex;
     justify-content: space-between;
+    
+    
 }
 
 .home-icon a{
@@ -143,11 +157,73 @@ body{
 }
 
 
+
+.container {
+    background-color: transparent;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    height: 650px;
+    width: 1500px;
+    border-radius: 2rem;
+}
+
+.home-content-box{
+    align-items: center;
+    text-align: center;
+    border-radius: 2rem;
+    width: 700px;
+    height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.box{
+    display: flex;
+    backdrop-filter: blur(5px);
+    align-items: center;
+}
+
+.kent-pic{
+    height: 350px;
+    width: 350px;
+
+}
+
+.img{
+    height: 20px;
+    width: 20px;
+}
+.hazel-pic{
+    height: 350px;
+    width: 350px;
+
+    
+}
+
+.box .hazel-pic .profile{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-right: -70px;
+}
+.box .kent-pic .profile{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-left: 70px;
+}
+
+
 .about{
     display: flex;
     align-items: center;
     margin: 30px;
 }
+
+
 
 .navbar{
     display: flex;
