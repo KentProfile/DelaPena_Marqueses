@@ -79,18 +79,15 @@ body{
     max-width: 700px;
     max-height: 700px;
     padding: 50px;
+    
 }
-/*
+
 .container .home-content h1{
-    font-size:43px;
-    font-weight: 700;
-    color: #FAF5E9;
-    line-height: 1.2;
-    align-items: center;
-    text-align: center;
-    padding-top: 50px;
+    font-family: 'Dela Gothic One', cursive;
+    
 
 }
+/*
 
 .container .home-content h3{
     font-size:30px;
@@ -237,9 +234,6 @@ body{
 }
 
 
-/*End of home page*/
-
-/*Heding-about page*/
 
 .about-container{
     background-color: white;
@@ -282,6 +276,81 @@ body{
 
 }
 
+/*End of home page*/
+
+/*About Kent page*/
+
+.about-hazel{
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 130px;
+    width: 1500px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.pic-box img{
+    position: absolute;
+    z-index: 3;
+    width: 400px;
+    height: 600px;
+    padding: 5px;
+    border-radius: 10px;
+
+
+}
+.pic-pic-box{
+    align-items: center;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: #522157;
+    justify-content: center;
+    -ms-align-items: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.pic-pic-box::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    background: linear-gradient(#E4DFD9, #8B4C70);
+    animation: rotate 8s linear infinite;
+
+}
+
+.pic-pic-box::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    inset: 5px;
+    border-radius: 0.5rem;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.about-hazel .pic-content{
+    width: 950px;
+    height: 600px;
+    border-radius: 0.5rem;
+    align-items:center;
+    margin-left: 5px;
+    background-color: #E4DFD9;
+
+}
 
 
 
