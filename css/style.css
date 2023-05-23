@@ -349,9 +349,48 @@ body{
     align-items:center;
     margin-left: 5px;
     background-color: #E4DFD9;
+    display: flex;
+    margin-left: 20px;
+    align-items: first baseline;
 
 }
 
+
+.pic-content .tab-links{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+    
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 50px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links .active-link::after{
+    width: 50%;
+}
+ 
+.about-hazel .tab-contents{
+    background-color: #522157;
+    align-items: center;
+    margin-left: 20px;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    margin-right: 100px;
+}
 
 
 
