@@ -341,8 +341,8 @@ body{
     }
 }
 
-
-.about-hazel .pic-content{
+/*
+.pic-content{
     width: 950px;
     height: 600px;
     border-radius: 0.5rem;
@@ -351,7 +351,7 @@ body{
     background-color: #E4DFD9;
     display: flex;
     margin-left: 20px;
-    align-items: first baseline;
+    
 
 }
 
@@ -382,7 +382,7 @@ body{
     width: 50%;
 }
  
-.about-hazel .tab-contents{
+.pic-content .tab-contents{
     background-color: #522157;
     align-items: center;
     margin-left: 20px;
@@ -391,16 +391,87 @@ body{
     width: 500px;
     margin-right: 100px;
 }
+*/
 
+#about{
+    margin-top: 130px;
+    margin-left: 80px;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.about-col-1{
+    flex-basis: 35%;
 
+}
 
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
 
+.about-col-2{
+    flex-basis: 60%;
+    margin-right: 60px;
+    
 
+}
 
+.about-title{
+    font-size: 50px;
+    font-weight: 600;
+    color:#E4DFD9;
+}
 
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
 
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
 
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #E4DFD9;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 14px;
+    margin: 0 0 5px;
+
+}
+
+.tab-contents ul li span{
+
+    color: #C2649A;
+    font-size: 12px;
+}
+
+.tab-contents{
+    display: none;
+}
 
 
 
