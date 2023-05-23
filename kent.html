@@ -17,15 +17,13 @@
     
     </head>
     <body>
-
+  
         <header class="header">
             <a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>Stalk</span></a>
 
             <ul class="navbar">
                 <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="account.html">Account</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="work.html">Work</a></li>
             </ul>
 
@@ -36,32 +34,121 @@
             
         </header>
         
-        <section class="about">
-
-            <h1 class="heading"> Profiles</h1>
-        
-            <div class="box-container">
-
-                <div class="box">
-                    <img src="/images/haz.png" alt="Hazel Picture">
-                        <a href="hazel.html" class="btn">Hazel</a>
+        <!---   <div class="about-hazel">
+                <div class="pic-pic-box">
+                    <div class="pic-box">
+                      <img src="/images/h-pic.jpg" alt="">
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="/images/kent.png" alt="Kent Picture">
-                        <a href="kent.html" class="btn">Kent</a>
+                <div class="pic-content">
+                   
+                    <p class="tab-links active-link">Personal Information</p>
+                    <p class="tab-links">Education</p>
+                    <p class="tab-links">Skills</p>
+                    <p class="tab-links">Album</p>
+
+                    <div class="tab-contents">
+                        <ul>
+                            <li><span>Name</span><br>Anne Marqueses</li>
+                            <li><span>Age</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Gender</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Birthday</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Address</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Contact Number</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Status</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Citizenship</span><br>Hazel Anne Marqueses</li>
+                         
+                        </ul>
+                    </div>
+
+                </div>
+               
+                
+            
+            </div>--> 
+
+            <div id="about">
+                <div class="container-about">
+                    <div class="row">
+                       <div class="about-col-1">
+                        <div class="pic-pic-box">
+                            <div class="pic-box">
+                              <img src="/images/KENT.jpg" alt="">
+                            </div>
+                        </div>
+                       </div>
+                       <div class="about-col-2">
+                        <h1 class="about-title">About Me</h1>
+                        <p>
+                            Hi, I'm Kent Arjay Dela Peña. I am 21 years old and studying at one of the most famous universities here in Bicol, Bicol University. I am taking a Bachelor of Science in Information Technology. I am also in my second year. I am also the incumbent Vice Chairperson for External Affairs in CircUITS in our department organization.                        
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('personal-info')">Personal Information</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                           
+                        </div>
+
+                        <div class="tab-contents active-tab" id="personal-info">
+                            <ul>
+                                <li><span>Name</span><br>Kent Ar-jay Dela Peña</li>
+                                <li><span>Age</span><br>21</li>
+                                <li><span>Gender</span><br>Male</li>
+                                <li><span>Birthday</span><br>May 13, 2002</li>
+                                <li><span>Address</span><br>Sto. Domingo, Albay</li>
+                                <li><span>Contact Number</span><br>09816635890</li>
+                                <li><span>Status</span><br>Single</li>
+                                <li><span>Citizenship</span><br>Filipino</li>
+                             
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Day Care Center</span><br>None</li>
+                                <li><span>Kindergarten</span><br>Manlucugan's Kindergarten<br><span>2006-2008</span></li>
+                                <li><span>Elementary School</span><br>Don Miguel Lukban Elementary School<br><span>2008-2014</span></li>
+                                <li><span>Junior Hig School</span><br>Tabas National High School<br><span>2014-2019</span></li>
+                                <li><span>Senior High School</span><br>Camarines Norte College<br><span>2019-2021</span></li>
+                                <li><span>College</span><br>Bicol University<br><span>2021-Present</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Technical Skills</span><br>Programming Languages<br><span>C, HTML, Javascript, Java, Assembly, SQL, PHP</span></li>
+                                <li><span></span><br>Front End Developer<br></li>
+                            </ul>
+                        </div>
+
+                       </div>
+                    </div>
                 </div>
             </div>
-            
-        </div>
-        
-        </section>
 
-
- 
             <!--js link--->
-            <script type="text/javascript" src="js/script.js"></script>
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+                
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+
+
+                }
+
+            </script>
 
 
     </body>
 
-</html>
+    </html>

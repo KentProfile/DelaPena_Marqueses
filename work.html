@@ -23,10 +23,9 @@
 
             <ul class="navbar">
                 <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="account.html">Account</a></li>
-                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="work.html">Hazel</a></li>
+                <li><a href="kent.html">Kent</a></li>
             </ul>
 
             <div class="main">
@@ -81,16 +80,17 @@
                        </div>
                        <div class="about-col-2">
                         <h1 class="about-title">About Me</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptatem recusandae, in earum omnis, obcaecati nulla accusamus fuga necessitatibus ipsam voluptate cum veniam assumenda soluta sapiente? Veniam beatae saepe assumenda.
+                        <p>
+                            Hi, I'm Hazel Anne B. Marqueses. I am 20 years old and studying at one of the most famous universities here in Bicol, Bicol University. I am taking a Bachelor of Science in Information Technology. I am also in my second year. I am also the incumbent Vice Chairperson for Internal Affairs in CircUITS in our department organization. Last year, I was the business manager of CircUITS.                            
                         </p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link">Personal Information</p>
-                            <p class="tab-links">Education</p>
-                            <p class="tab-links">Skills</p>
+                            <p class="tab-links active-link" onclick="opentab('personal-info')">Personal Information</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
                            
                         </div>
 
-                        <div class="tab-contents">
+                        <div class="tab-contents active-tab" id="personal-info">
                             <ul>
                                 <li><span>Name</span><br>Hazel Anne B. Marqueses</li>
                                 <li><span>Age</span><br>20</li>
@@ -103,7 +103,7 @@
                              
                             </ul>
                         </div>
-                        <div class="tab-contents">
+                        <div class="tab-contents" id="education">
                             <ul>
                                 <li><span>Day Care Center</span><br>None</li>
                                 <li><span>Kindergarten</span><br>Children's New Life of Learning<br><span>2007-2009</span></li>
@@ -114,13 +114,40 @@
                             </ul>
                         </div>
 
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Technical Skills</span><br>Programming Languages<br><span>C, HTML, Javascript, Java, Assembly, SQL, PHP</span></li>
+                                <li><span></span><br>Front End Developer<br></li>
+                            </ul>
+                        </div>
+
                        </div>
                     </div>
                 </div>
             </div>
 
             <!--js link--->
-            <script type="text/javascript" src="js/script.js"></script>
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+                
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+
+
+                }
+
+            </script>
 
 
     </body>
