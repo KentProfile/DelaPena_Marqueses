@@ -17,16 +17,16 @@
     
     </head>
     <body>
-
+  
         <header class="header">
             <a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>Stalk</span></a>
 
             <ul class="navbar">
                 <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="account.html">Account</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="work.html">Work</a></li>
+                <li><a href="hazel.html">Hazel</a></li>
+                <li><a href="kent.html">Kent</a></li>
             </ul>
 
             <div class="main">
@@ -35,11 +35,122 @@
             </div>
             
         </header>
- 
+        
+        <!---   <div class="about-hazel">
+                <div class="pic-pic-box">
+                    <div class="pic-box">
+                      <img src="/images/h-pic.jpg" alt="">
+                    </div>
+                </div>
+                <div class="pic-content">
+                   
+                    <p class="tab-links active-link">Personal Information</p>
+                    <p class="tab-links">Education</p>
+                    <p class="tab-links">Skills</p>
+                    <p class="tab-links">Album</p>
+
+                    <div class="tab-contents">
+                        <ul>
+                            <li><span>Name</span><br>Anne Marqueses</li>
+                            <li><span>Age</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Gender</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Birthday</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Address</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Contact Number</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Status</span><br>Hazel Anne Marqueses</li>
+                            <li><span>Citizenship</span><br>Hazel Anne Marqueses</li>
+                         
+                        </ul>
+                    </div>
+
+                </div>
+               
+                
+            
+            </div>--> 
+
+            <div id="about">
+                <div class="container-about">
+                    <div class="row">
+                       <div class="about-col-1">
+                        <div class="pic-pic-box">
+                            <div class="pic-box">
+                              <img src="/images/h-pic.jpg" alt="">
+                            </div>
+                        </div>
+                       </div>
+                       <div class="about-col-2">
+                        <h1 class="about-title">About Me</h1>
+                        <p>
+                            Hi, I'm Hazel Anne B. Marqueses. I am 20 years old and studying at one of the most famous universities here in Bicol, Bicol University. I am taking a Bachelor of Science in Information Technology. I am also in my second year. I am also the incumbent Vice Chairperson for Internal Affairs in CircUITS in our department organization. Last year, I was the business manager of CircUITS.                            
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('personal-info')">Personal Information</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                           
+                        </div>
+
+                        <div class="tab-contents active-tab" id="personal-info">
+                            <ul>
+                                <li><span>Name</span><br>Hazel Anne B. Marqueses</li>
+                                <li><span>Age</span><br>20</li>
+                                <li><span>Gender</span><br>Female</li>
+                                <li><span>Birthday</span><br>July 19, 2002</li>
+                                <li><span>Address</span><br>Dao, Pillar Sorsogon</li>
+                                <li><span>Contact Number</span><br>09185865159</li>
+                                <li><span>Status</span><br>Single pa rin</li>
+                                <li><span>Citizenship</span><br>Filipino</li>
+                             
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Day Care Center</span><br>None</li>
+                                <li><span>Kindergarten</span><br>Children's New Life of Learning<br><span>2007-2009</span></li>
+                                <li><span>Elementary School</span><br>Pilar 1 Central School<br><span>2009-2014</span></li>
+                                <li><span>Junior Hig School</span><br>Dominican School of Pilar<br><span>2014-2019</span></li>
+                                <li><span>Senior High School</span><br>Dominican School of Pilar<br><span>2019-2021</span></li>
+                                <li><span>College</span><br>Bicol University<br><span>2021-Present</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Technical Skills</span><br>Programming Languages<br><span>C, HTML, Javascript, Java, Assembly, SQL, PHP</span></li>
+                                <li><span></span><br>Front End Developer<br></li>
+                            </ul>
+                        </div>
+
+                       </div>
+                    </div>
+                </div>
+            </div>
+
             <!--js link--->
-            <script type="text/javascript" src="js/script.js"></script>
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+                
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+
+
+                }
+
+            </script>
 
 
     </body>
 
-</html>
+    </html>
