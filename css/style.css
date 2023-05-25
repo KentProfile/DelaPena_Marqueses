@@ -393,35 +393,35 @@ body{
 }
 */
 
-#about{
+#abouts{
     margin-top: 130px;
     margin-left: 80px;
     color: #ababab;
 }
-.row{
+.hazel-row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.about-col-1{
+.abouts-col-1{
     flex-basis: 35%;
 
 }
 
-.about-col-1 img{
+.abouts-col-1 img{
     width: 100%;
     border-radius: 15px;
 }
 
-.about-col-2{
+.abouts-col-2{
     flex-basis: 60%;
     margin-right: 60px;
     
 
 }
 
-.about-title{
+.abouts-title{
     font-size: 50px;
     font-weight: 600;
     color:#E4DFD9;
@@ -795,6 +795,235 @@ label:hover{
 
 /*==========End of Work=========*/
 
+
+/*================About Us Page=================*/
+.ab-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1500px;
+    width: 100%;
+    align-items: center;
+}
+
+.ab-row {
+
+    padding: 2em 1em;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+.ab-column {
+    width: 100%;
+    padding-top: 20px;
+    align-items: center;
+    column-gap:
+}
+
+.ab-btn {
+    display: inline-block;
+    background: #C2649A;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+    text-decoration: none; 
+    align-items: center;
+}
+
+.ab-btn:hover {
+    background: #522157;
+}
+
+.ab-row h1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3.5em;
+    color: white;
+}
+
+.ab-card {
+    box-shadow: 0 0 2.2em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    height: 500px;
+    color: #E4DFD9;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+    text-align: center;
+    border: #E4C7B7 solid 2px;
+}
+
+.ab-card .ab-img-container {
+    width: 8em;
+    height: 8em;
+    background-color: #C2649A;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+    align-items: center;
+}
+
+.ab-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.ab-card h3 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.ab-card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.ab-icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ab-card a {
+    text-decoration: none;
+    color: #E4DFD9;
+    font-size: 1.4em;
+}
+
+.ab-card:hover { 
+    background: linear-gradient(#C2649A, #E4C7B7);
+    color: #E4DFD9;
+}
+
+.ab-card:hover .ab-img-container {  
+    transform: scale(1.15);
+}
+
+@media screen and (min-width: 768px) {
+    .ab-container {
+        padding: 1em 7em; 
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ab-container {
+        padding: 1em; 
+    }
+    
+    .ab-card {
+        padding: 5em 1em;
+    }
+    
+    .ab-column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+}
+
+
+
+/* =========End of About Us Page==============*/
+
+/* =========Start of Services Page==============*/
+.ser-title h1{
+    text-align: center;
+    padding-top: 130px;
+    font-size: 42px;
+    color:#fff;
+}
+.ser-container{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.ser-services{
+    padding-top: 80px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+.ser-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ser-card:hover{
+    background-color: #C2649A;
+    transition: 0.4s ease;
+}
+.ser-card .ser-icon{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.ser-card h2{
+    font-size: 28px;
+    color: #5a1b6e;
+    margin-bottom: 20px;
+}
+.ser-card p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #222327;
+}
+.ser-button{
+    font-size: 15px;
+    text-decoration: none;
+    color: #5a1b6e;
+    background-color: #77405f;
+    padding: 8px 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.ser-button:hover{
+    background-color: #a993ff;
+    transition: 0.4s ease;
+}
+@media screen and (max-width:940px){
+    .ser-services{
+        display: flex;
+        flex-direction: column;
+    }
+    .ser-card{
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+}
+
+.p-serve{
+    padding-top: 50px;
+    height: 1000px; /* Set the desired height for the section */
+    overflow-y: scroll;
+}
+
+
+/* =========End of Services Page==============*/
 
 
 .navbar{
