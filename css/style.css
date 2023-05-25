@@ -786,14 +786,12 @@ label:hover{
 .work-pic video{
     position: relative;
     cursor: pointer;
-    height: 400px;
+    height: 380px;
     
     transition: .5s;
     line-height: 1;
-    padding: 10px;
+    
 }
-
-
 
 /*==========End of Work=========*/
 
